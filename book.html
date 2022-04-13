@@ -15,7 +15,7 @@
 
         body {
             color: #000000;
-            background-color: #496b81;
+            background-color: white;;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -62,18 +62,18 @@
     <div id="app">
         <div id="form">
             <label>
-                Book's title:
+                Tytuł książki:
                 <input v-model="book.title" />
             </label>
             <label>
-                Author's name:
+                Imię autora:
                 <input v-model="book.author.name" />
             </label>
             <label>
-                Author's surname:
+                Nazwisko autora:
                 <input v-model="book.author.surname" />
             </label>
-            <button @click="saveBook()">Save</button>
+            <button @click="saveBook()">Zapisz</button>
         </div>
     </div>
 

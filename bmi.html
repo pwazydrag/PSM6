@@ -15,7 +15,7 @@
 
         body {
             color: #141313;
-            background-color: #496b81;
+            background-color: white;;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -86,18 +86,18 @@
 
         <div id="form">
             <label>
-                Weight (kg):
+                Waga:
                 <input type="number" v-model.number="bodyParams.weight">
             </label>
             <label>
-                Height (cm):
+                Wysokość:
                 <input type="number" v-model.number="bodyParams.height">
             </label>
         </div>
-
+        <h2>Twój wskaźnik bmi: </h2>
         <section id="score"
             :class="{ normal: bmi.category === 0, mild: Math.abs(bmi.category) === 1, moderate: Math.abs(bmi.category) === 2, severe: Math.abs(bmi.category) >= 3 }">
-            <h2>Your score</h2>
+            
             <p>{{ bmi.score.toFixed(2) }}</p>
         </section>
     </div>

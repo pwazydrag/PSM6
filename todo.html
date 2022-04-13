@@ -15,7 +15,7 @@
 
         body {
             color: #141414;
-            background-color: #496b81;
+            background-color: white;
         }
 
         #app {
@@ -97,21 +97,21 @@
 <body>
     <div id="app">
         <h1>DO WYKONANIA</h1>
-        <div>
+        <!-- <div>
             <input type="text" placeholder="..." v-model.trim="newTodo" />
             <button @click="saveNewTodo()">Save</button>
-        </div>
+        </div> -->
         <ol>
             <li v-for="(todo, idx) in todos">
                 <p>{{ idx + 1 }}.&ensp;{{ todo }}</p>
                 <div class="buttons">
-                    <button @click="deleteTodo(idx)">🗙</button>
-                    <div class="move-buttons">
+                    <!-- <button @click="deleteTodo(idx)">🗙</button> -->
+                    <!-- <div class="move-buttons">
                         <button @click="moveTodoUp(idx)">
-                            <div></div>
+                            <div></div> -->
                         </button>
-                        <button @click="moveTodoDown(idx)">
-                            <div></div>
+                        <!-- <button @click="moveTodoDown(idx)">
+                            <div></div> -->
                         </button>
                     </div>
                 </div>
