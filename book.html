@@ -91,7 +91,10 @@
                 });
 
                 function saveBook() {
-                    console.log(toRaw(book));
+                    console.log("Wprowadzone dane:")
+                    console.log("Tytuł książki: " + book.title);
+                    console.log("Imię autora: " + book.author.name);
+                    console.log("Nazwisko autora: " + book.author.surname);
                 }
 
                 return {

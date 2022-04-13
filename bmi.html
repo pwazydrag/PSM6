@@ -95,8 +95,7 @@
             </label>
         </div>
         <h2>Twój wskaźnik bmi: </h2>
-        <section id="score"
-            :class="{ normal: bmi.category === 0, mild: Math.abs(bmi.category) === 1, moderate: Math.abs(bmi.category) === 2, severe: Math.abs(bmi.category) >= 3 }">
+        <section id="score"></section>
             
             <p>{{ bmi.score.toFixed(2) }}</p>
         </section>
