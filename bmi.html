@@ -113,28 +113,7 @@
 
                 const bmi = computed(() => {
                     const score = bodyParams.weight / (bodyParams.height / 100) ** 2;
-                    let category = null;
-                    if (isNaN(score)) {
-                        category = null;
-                    } else if (score < 16) {
-                        category = -3;
-                    } else if (score < 17) {
-                        category = -2;
-                    } else if (score < 18.5) {
-                        category = -1;
-                    } else if (score < 25) {
-                        category = 0;
-                    } else if (score < 30) {
-                        category = 1;
-                    } else if (score < 35) {
-                        category = 2;
-                    } else if (score < 40) {
-                        category = 3;
-                    } else {
-                        category = 4;
-                    }
-
-                    return { score, category };
+                    return { score };
                 });
 
                 return {

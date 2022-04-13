@@ -46,7 +46,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgba(31, 168, 209, 0.952);
+            background-color: white);
             padding: 1.3rem 2rem;
             border-radius: 12px;
         }
@@ -97,22 +97,12 @@
 <body>
     <div id="app">
         <h1>DO WYKONANIA</h1>
-        <!-- <div>
-            <input type="text" placeholder="..." v-model.trim="newTodo" />
-            <button @click="saveNewTodo()">Save</button>
-        </div> -->
+
         <ol>
             <li v-for="(todo, idx) in todos">
                 <p>{{ idx + 1 }}.&ensp;{{ todo }}</p>
                 <div class="buttons">
-                    <!-- <button @click="deleteTodo(idx)">🗙</button> -->
-                    <!-- <div class="move-buttons">
-                        <button @click="moveTodoUp(idx)">
-                            <div></div> -->
-                        </button>
-                        <!-- <button @click="moveTodoDown(idx)">
-                            <div></div> -->
-                        </button>
+
                     </div>
                 </div>
             </li>
@@ -124,7 +114,7 @@
 
         createApp({
             setup() {
-                const todos = reactive([
+                const todos =([
                     "Purchase two tickets to cinema",
                     "Clean my room",
                     "Visit grandmother",

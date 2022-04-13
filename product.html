@@ -22,11 +22,6 @@
             letter-spacing: 0.2rem;
         }
 
-        /* #app{
-            border: #050505 1px solid;
-            padding: 1rem 6rem;
-        } */
-
         #app > p:first-of-type, #app > p:last-of-type {
             font-weight: bold;
             font-size: 1.1rem;
@@ -69,7 +64,7 @@
         
         createApp({
             setup() {
-                const receipt = reactive({
+                const receipt =({
                     product: "book",
                     unitPrice: 17,
                     quantity: 3,
